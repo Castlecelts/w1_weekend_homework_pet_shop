@@ -7,3 +7,11 @@
 #                 ->name
 
 ###########################################################
+
+#Pet shop name function
+#method = pet_shop_name
+#function should - return the name of the pet_shop
+
+def pet_shop_name(shops)
+ return shops[:name]
+end
