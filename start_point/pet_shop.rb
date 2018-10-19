@@ -86,3 +86,15 @@ end
 #function should give a 0 count if breed not found
 
 #NOTE the else with return line is ESSENTIAL. otherwise the function does not return anything and instead shows all dogs.
+
+#test 10 - this should check all of pet_shop for a pet name and return it if it exists.
+#method find_pet_by_name
+#function should return the name
+
+def find_pet_by_name(shops, pet_name)
+  for x in shops[:pets]
+    if x[:name] == pet_name
+      return x
+    end
+  end
+end
