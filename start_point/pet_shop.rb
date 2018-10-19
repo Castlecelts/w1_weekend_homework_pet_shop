@@ -47,3 +47,13 @@ end
 def pets_sold(shops)
   return shops[:admin][:pets_sold]
 end
+
+#increase the number of pets sold
+#method increase_pets_sold
+#method also called pets_sold
+#function should increase the value of pets_sold in admin
+
+def increase_pets_sold(shops, numsoldpets)
+  num_pets_sold = numsoldpets
+  return shops[:admin][:pets_sold] += num_pets_sold
+end
