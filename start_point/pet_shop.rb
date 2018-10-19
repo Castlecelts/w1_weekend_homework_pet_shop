@@ -57,3 +57,11 @@ def increase_pets_sold(shops, numsoldpets)
   num_pets_sold = numsoldpets
   return shops[:admin][:pets_sold] += num_pets_sold
 end
+
+#calc number of pets in the pet_shop
+#method = stock_count
+#function should take the size of pets. (maybe does not need to return??)
+
+def stock_count(shops)
+  shops[:pets].length
+end
