@@ -65,3 +65,16 @@ end
 def stock_count(shops)
   shops[:pets].length
 end
+
+#calc how many of each type of breed is in the pet_shop
+#method = pets_by_breed
+#function find the total of a specific breed of pet_type
+
+def pets_by_breed(shops, breed)
+   number_of_pets_by_breed = Array.new
+  for x in shops[:pets]
+    if x[:breed] == breed
+      return number_of_pets_by_breed += number_of_pets_by_breed.push(x)
+    end
+  end
+end
