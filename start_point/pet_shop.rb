@@ -28,3 +28,15 @@ end
 #method new add_or_remove_cash
 #method also called total_cash
 #function should take an input and add it to total_cash
+
+def add_or_remove_cash(shops, value)
+  sum_to_add = value
+  return shops[:admin][:total_cash] += sum_to_add
+end
+
+#calc total_cash after subtracting cash
+#method called add_or_remove_cash
+#method called total_cash
+#function should now also subtract from total_cash
+
+#horray - method add_or_remove_cash already does this!!
