@@ -38,5 +38,12 @@ end
 #method called add_or_remove_cash
 #method called total_cash
 #function should now also subtract from total_cash
-
 #horray - method add_or_remove_cash already does this!!
+
+#calc number of number of pets_sold
+#method = pets_sold
+#function should return the value of pets_sold in admin
+
+def pets_sold(shops)
+  return shops[:admin][:pets_sold]
+end
