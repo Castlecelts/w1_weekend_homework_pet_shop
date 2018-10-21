@@ -135,3 +135,11 @@ end
 def customer_cash(customer)
   return customer[:cash]
 end
+
+#test 14 - take value of cash from customers
+#method remove_customer_cash
+#function remove total_cash
+def remove_customer_cash(person, cost)
+  sum_to_remove = - cost
+  return person[:cash] += sum_to_remove
+end
