@@ -151,3 +151,11 @@ end
 def customer_pet_count(person)
   return person[:pets].length
 end
+
+#test 16 - add new_pet hash to customer Array
+#method add_pet_to_customer
+# function add hash into the pets array of customers 1st array slot
+
+def add_pet_to_customer(person, new_animal)
+  person[:pets] << new_animal
+end
