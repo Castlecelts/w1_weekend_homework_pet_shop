@@ -143,3 +143,11 @@ def remove_customer_cash(person, cost)
   sum_to_remove = - cost
   return person[:cash] += sum_to_remove
 end
+
+#test 15 - check to see how many pets a customer has (all start with an empty array)
+#method customer_pet_count
+#function find the length of the array
+
+def customer_pet_count(person)
+  return person[:pets].length
+end
