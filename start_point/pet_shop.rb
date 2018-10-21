@@ -127,3 +127,11 @@ end
 def add_pet_to_stock(shops, new_animal)
   shops[:pets] << new_animal
 end
+
+#test 14 - check the total cash a customer has
+#method customer_cash
+#function check customers array -> hash for cash:
+
+def customer_cash(customer)
+  return customer[:cash]
+end
