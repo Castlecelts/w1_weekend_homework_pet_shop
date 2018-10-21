@@ -197,7 +197,7 @@ end
 #   end
 # end
 
-########################(@pet_shop, "Arthur", @customers[0])
+########################p
 def sell_pet_to_customer(shop, pet_name, person)
 
   if customer_can_afford_pet(person, pet_name) = true
