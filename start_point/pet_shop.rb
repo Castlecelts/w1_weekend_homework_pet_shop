@@ -106,3 +106,15 @@ end
 #method find_pet_by_name
 #function should return nil
 #note - after for function you can put the result you get if nothing else happens. i.e. return nil
+
+#test 12 - this should remove_pet_by_name in the pet shop.
+#method remove_pet_by_name
+#function find a pet_by_name and delete it
+
+def remove_pet_by_name(shops, pet_name)
+  for x in shops[:pets] #make sure you are looking in the right part of your code!!
+    if x[:name] == pet_name
+    return x[:name] = nil
+    end
+  end
+end
