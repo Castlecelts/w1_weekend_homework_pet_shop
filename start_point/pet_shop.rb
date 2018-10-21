@@ -92,9 +92,17 @@ end
 #function should return the name
 
 def find_pet_by_name(shops, pet_name)
-  for x in shops[:pets]
-    if x[:name] == pet_name
-      return x
+  for pet in shops[:pets]
+    if pet[:name] == pet_name
+      return pet
+    # elsif pet[:name] == nil
+      # return nil
     end
   end
+  nil #NOTE <- outside of the for function!!
 end
+
+#test 11 - this should check all pet names in pet_shop and return nil if it does NOT exist
+#method find_pet_by_name
+#function should return nil
+#note - after for function you can put the result you get if nothing else happens. i.e. return nil
