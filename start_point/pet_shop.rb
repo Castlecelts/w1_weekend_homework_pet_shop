@@ -166,12 +166,41 @@ end
 
 #test 17 - custom[1] has 50 new_pet costs 100 therefore can't can_buy_pet
 #method customer_can_afford_pet
-#function should compare 2 values and return ture or false
+#function should compare 2 values and return true or false
 
 def customer_can_afford_pet(person, new_animal)
   if person[:cash] >= new_animal[:price]
     true
   else
     false
+  end
+end
+
+#test 18 - checks that true is returned by the function in test 17
+
+#test 19 - customer[0] has 1000 cash and no pets, the pet arthur costs 900.
+#method sell_pet_to_customer
+#other method checked - find_pet_by_name, customer_pet_count, pets_sold, customer_cash, total_cash.
+#function if customer_can_afford_pet is true then the function add_pet_to_customer should run
+
+#first challege - convert pet_name(script) into referencing @pet_shop pets
+
+# def return_pet_hash(shop, pet_name)
+#   temp_array = []
+#   for x in shop[:pets]
+#     if x[:name] = pet_name
+#       return temp_array = x
+#
+#     elsif x[:name] != pet_name
+#       return temp_array = []
+#     end
+#   end
+# end
+
+########################(@pet_shop, "Arthur", @customers[0])
+def sell_pet_to_customer(shop, pet_name, person)
+
+  if customer_can_afford_pet(person, pet_name) = true
+    add_pet_to_customer(person, pet_name)
   end
 end
