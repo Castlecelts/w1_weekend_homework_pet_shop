@@ -118,3 +118,12 @@ def remove_pet_by_name(shops, pet_name)
     end
   end
 end
+
+#test 13 - adding a pet {hash} from new_pet to pet_shop's pets [array]
+#method add_pet_to_stock
+#method also stock_count from previous
+#function should add hash from outside world to pet_shop array
+
+def add_pet_to_stock(shops, new_animal)
+  shops[:pets] << new_animal
+end
