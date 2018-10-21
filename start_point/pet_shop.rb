@@ -159,3 +159,19 @@ end
 def add_pet_to_customer(person, new_animal)
   person[:pets] << new_animal
 end
+
+#############################################################
+
+#Optional Qs
+
+#test 17 - custom[1] has 50 new_pet costs 100 therefore can't can_buy_pet
+#method customer_can_afford_pet
+#function should compare 2 values and return ture or false
+
+def customer_can_afford_pet(person, new_animal)
+  if person[:cash] >= new_animal[:price]
+    true
+  else
+    false
+  end
+end
